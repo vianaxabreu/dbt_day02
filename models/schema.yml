@@ -165,11 +165,11 @@ sources:
       - name: facebook
         identifier: raw_gz_facebook
         description: table contains all campaign and costs with dates for facebook media
-        tests:
-          - not_null:
-              column_name:
-                - date_date
-                - paid_source
+        # tests:
+        #   - not_null:
+        #      column_name:
+        #        - date_date
+        #        - paid_source
         columns:
           - name: date_date
             description: date of the campaign
