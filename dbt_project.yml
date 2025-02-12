@@ -37,4 +37,4 @@ models:
     mart:
       +materialized: table
       finance:
-        +schema: finance
+        #+schema: finance
