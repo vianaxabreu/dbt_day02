@@ -1,5 +1,5 @@
-with 
-    source as ( select * from {{ source('raw', 'criteo') }} ),
+with
+    source as (select * from {{ source("raw", "criteo") }}),
 
     renamed as (
 
@@ -8,9 +8,10 @@ with
             paid_source,
             campaign_key,
             campgn_name as campaing_name,
-            cast(ads_cost as FLOAT64) as ads_cost,
+            cast(ads_cost as float64) as ads_cost,
             impression,
             click
         from source
     )
-select * from renamed
+select *
+from renamed
