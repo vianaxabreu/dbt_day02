@@ -4,6 +4,8 @@ this
         comment
 ##############}
 {#config block for materialization
+
+
 {{
     config(
         materialized='table'
