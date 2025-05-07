@@ -1,11 +1,11 @@
 with
-    finance_campaign_day as ( select * from {{ ref("mart_finance_campaigns_day") }}),
+    finance_campaign_day as (select * from {{ ref("mart_finance_campaigns_day") }}),
     finance_campaign_month as (
         select
             date_trunc(date_date, month) as datemonth,
 
             sum(operational_margin - ads_cost) as ads_margin,
-            round(sum(average_basket),2) as average_basket,
+            round(sum(average_basket), 2) as average_basket,
             sum(operational_margin) as operational_margin,
             sum(ads_cost) as ads_cost,
             sum(ads_impression) as ads_impression,
@@ -21,4 +21,5 @@ with
         group by 1
         order by datemonth desc
     )
-select * from finance_campaign_month
+select *
+from finance_campaign_month

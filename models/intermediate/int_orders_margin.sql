@@ -15,5 +15,4 @@ with
         order by 1 desc
     )
 select *
-from
-    orders_grouped
+from orders_grouped

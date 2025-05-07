@@ -192,7 +192,6 @@ sources:
           - name: click
             description: to be defined
 
-
 models:
   - name: int_sales_margin
     tests:
