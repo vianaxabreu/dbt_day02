@@ -61,7 +61,7 @@ This dbt documentation provides an overview of the project's data models and the
 ### Key Contacts 📇
 
 - **Project Owner**: [Alex Viana](https://github.com/vianaxabreu) (Data Engineering Team)
-- [Greenweez Website](https://www.greenweez.com/)
-- [GitHub Repo](https://github.com/vianaxabreu/dbt_day02.git)
+- **About:** [Greenweez](https://www.greenweez.com/)
+- **Check this out:** [GitHub Repo](https://github.com/vianaxabreu/dbt_day02.git)
 
 {% enddocs %}
