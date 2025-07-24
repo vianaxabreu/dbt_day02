@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: int_sales_margin
+    
+    columns:
+      - name: orders_id
+        description: id of the order, should be pk, that means, unique and not null
+        tests:
+          - not_null
+      - name: products_id
+        description: id of the product, should not be null
+        tests:
+          - not_null
+      - name: margin
+        description: revenue - quantity*price
+        tests:
+          - not_null
+      - name: quantity
+        description: quantity purchased
+    tests:
+      - unique:
+          column_name: "(orders_id || '-' || products_id)"
+  - name: stg_raw__ship
+    columns:
+      - name: orders_id
+      - name: shipping_fee
