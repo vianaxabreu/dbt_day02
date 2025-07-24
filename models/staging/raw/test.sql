@@ -1,0 +1,1 @@
+select * from data-analytics-bootcamp-363212.gz_raw_data.raw_product

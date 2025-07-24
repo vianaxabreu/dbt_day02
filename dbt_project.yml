@@ -36,12 +36,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_day02:
     # Config indicated by + and applies to all files under models/example/
-    staging:
-      +materialized: table
     mart:
-      +materialized: table
       finance:
         +schema: finance
-        +materialized: view
+        +materialized: table
       supply:
         +schema: suplly

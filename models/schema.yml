@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: raw
-    schema: gz_raw_data
+    schema: gwz
     description: original dataset in a raw format
     tables:
       - name: product
