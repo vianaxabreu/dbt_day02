@@ -1,4 +1,4 @@
-{% docs __overview__ %}
+
 
 # Greenweez - dbt Project Overview 🌿
 
@@ -64,4 +64,3 @@ This dbt documentation provides an overview of the project's data models and the
 - [Greenweez Website](https://www.greenweez.com/)
 - [GitHub Repo](https://github.com/vianaxabreu/dbt_day02.git)
 
-{% enddocs %}
